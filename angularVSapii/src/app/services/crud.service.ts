@@ -23,4 +23,8 @@ export class CRUDService {
   create(data:CreateDTO):Observable<string>{
     return this.http.post<string>(this.baseUrl+"Create",data);
   }
+
+  // update(id:number,data:CreateDTO):Observable<string>{
+  //   return this.http
+  // }
 }
